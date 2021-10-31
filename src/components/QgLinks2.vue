@@ -88,8 +88,8 @@ export default {
 /* --- --- -- Responsive design -- --- --- */
 @media only screen and (max-width: 500px) {
   .nav__links2 {
-    height: 80vh;
-    margin-top:720px;
+    height: 85vh;
+    margin-top:725px;
   }
 }
 </style>

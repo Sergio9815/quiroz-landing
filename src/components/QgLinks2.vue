@@ -1,6 +1,6 @@
 <template>
     <section
-          @click="toggleLinks" v-animate-css.click="'fadeIn'" class="nav__links2">
+          @click="toggleLinks" class="nav__links2 animate__animated animate__fadeInLeft">
         <router-link
           v-animate-css.hover="'pulse'" to="/">Inicio
         </router-link>
@@ -58,15 +58,20 @@ export default {
 }
 
 .nav__links2 {
-    width: 100%;
-    height: 92vh;
-    margin-top: 695px;
-    background-color: var(--white);
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 100px;
+  position: fixed;
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
 }
 
 #nav a.router-link-exact-active {
@@ -78,6 +83,7 @@ export default {
 @media only screen and (max-width: 1000px) {
   .nav__links2 {
       display: flex;
+      left: 0;
   }
 
   #nav a:hover {
@@ -85,11 +91,4 @@ export default {
   }
 }
 
-/* --- --- -- Responsive design -- --- --- */
-@media only screen and (max-width: 500px) {
-  .nav__links2 {
-    margin-top:760px;
-    height: 88vh;
-  }
-}
 </style>

@@ -84,4 +84,12 @@ export default {
     color: var(--wine);
   }
 }
+
+/* --- --- -- Responsive design -- --- --- */
+@media only screen and (max-width: 500px) {
+  .nav__links2 {
+    height: 80vh;
+    margin-top:700px;
+  }
+}
 </style>

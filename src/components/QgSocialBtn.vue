@@ -72,5 +72,9 @@ svg {
   a:hover {
     color: var(--brown);
   }
+
+  svg {
+  width: 20px;
+  }
 }
 </style>

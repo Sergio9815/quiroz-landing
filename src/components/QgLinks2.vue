@@ -89,7 +89,7 @@ export default {
 @media only screen and (max-width: 500px) {
   .nav__links2 {
     height: 80vh;
-    margin-top:700px;
+    margin-top:720px;
   }
 }
 </style>

@@ -59,8 +59,8 @@ export default {
 
 .nav__links2 {
     width: 100%;
-    height: 88vh;
-    margin-top: 692px;
+    height: 92vh;
+    margin-top: 695px;
     background-color: var(--white);
     position: absolute;
     display: none;
@@ -88,7 +88,7 @@ export default {
 /* --- --- -- Responsive design -- --- --- */
 @media only screen and (max-width: 500px) {
   .nav__links2 {
-    height: 83vh;
+    height: 95vh;
     margin-top:728px;
   }
 }

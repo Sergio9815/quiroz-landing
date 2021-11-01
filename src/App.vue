@@ -24,6 +24,7 @@ export default {
   --brownLg: #A999A0;
   --brown: #1700106b;
   --brownDg: #170010;
+  --brownDg-2: #170010be;
   --blue: #7FD4FF;
   --gray: #c7c7c7;
   --whiteLg: #dfdfdf;

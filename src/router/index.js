@@ -17,6 +17,11 @@ const routes = [
     component: Home,
   },
   {
+    path: '/testimonios',
+    name: 'testimonios',
+    component: Home,
+  },
+  {
     path: '/sobre-nosotros',
     name: 'About',
     component: About,

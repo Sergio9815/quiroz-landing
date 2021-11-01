@@ -1,16 +1,19 @@
 <template>
   <div class="home">
     <qg-main/>
+    <qg-exp/>
   </div>
 </template>
 
 <script>
 import QgMain from '@/components/QgMain.vue';
+import QgExp from '@/components/QgExp.vue';
 
 export default {
   name: 'Home',
   components: {
     QgMain,
+    QgExp,
   },
 };
 </script>

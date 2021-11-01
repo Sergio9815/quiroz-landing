@@ -1,0 +1,133 @@
+<template>
+  <div class="exp">
+    <h1 class="exp__title"> {{ title }} </h1>
+
+    <section class="exp__container">
+      <div class="exp__container-video">
+        <iframe id="intro" width="560" height="315" src="https://www.youtube.com/embed/XKOO0FAkL0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+        <div class="exp__content">
+            <p>Contamos con más de <b>37 años de experiencia</b>, lo cual nos permite decirle,
+              consulte con Quiroz Govea & Asociados.</p>
+            <a v-animate-css.hover="'tada'" class="btn" href="https://github.com/Sergio9815/pokedex-api"
+            ><i class="fab fa-whatsapp"></i> Escríbanos</a>
+        </div>
+    </section>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'QgMain',
+  data() {
+    return {
+      title: 'Experiencia garantizada',
+    };
+  },
+};
+</script>
+
+<style scoped>
+.exp {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  /* background-color: var(--brown); */
+}
+
+.exp__title {
+  color: var(--brown);
+}
+
+.exp__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lightgreen; */
+  width: 80%;
+  gap: 40px;
+  /* margin-top: -100px; */
+}
+
+.exp__content {
+  width: 30%;
+  height: 200px;
+  /* background-color: darkorange; */
+  text-align: justify;
+  line-height: 25px;
+  padding: 30px;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 15px 60px;
+  background-color: var(--green);
+  text-decoration: none;
+  border-radius: 50px;
+  color: var(--wine);
+}
+
+.exp__container-video {
+  background-color: var(--brown);
+  position: relative;
+  width: 618px;
+  height: 315px;
+  border-radius: 150px;
+}
+
+#intro {
+  border-radius: 50px;
+}
+
+/* --- --- -- Responsive design -- --- --- */
+@media only screen and (max-width: 1134px) {
+  .exp__content {
+    width: 70%;
+    padding: 0;
+  }
+}
+
+/* --- --- -- Responsive design -- --- --- */
+@media only screen and (max-width: 1040px) {
+  .exp__container {
+    flex-direction: column;
+  }
+}
+
+/* --- --- -- Responsive design -- --- --- */
+@media only screen and (max-width: 700px) {
+  .exp__container-video {
+    background-color: transparent;
+    width: 100%;
+  }
+
+  #intro {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .exp__container {
+    width: 90%;
+  }
+
+  .exp__content {
+    width: 90%;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 15px 150px;
+    margin-top: 20px;
+  }
+
+}
+</style>

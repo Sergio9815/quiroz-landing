@@ -33,7 +33,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main {
   width: 100%;
@@ -45,7 +44,6 @@ export default {
 }
 
 .main__container {
-  /* background-color: aquamarine; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,7 +56,6 @@ export default {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  /* background-color: rgb(172, 127, 255); */
   width: 80%;
   height: 80vh;
 }
@@ -90,7 +87,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: rgb(150, 88, 185); */
   width: 50%;
   height: 85vh;
 }

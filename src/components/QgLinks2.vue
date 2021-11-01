@@ -82,8 +82,8 @@ export default {
 /* --- --- -- Responsive design -- --- --- */
 @media only screen and (max-width: 1000px) {
   .nav__links2 {
-      display: flex;
-      left: 0;
+    display: flex;
+    left: 0;
   }
 
   #nav a:hover {

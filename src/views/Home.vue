@@ -1,16 +1,25 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <qg-main/>
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue';
+import QgMain from '@/components/QgMain.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    QgMain,
   },
 };
 </script>
+
+<style scoped>
+.home {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+}
+</style>

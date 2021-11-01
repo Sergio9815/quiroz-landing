@@ -41,10 +41,10 @@ export default {
 
 /* contenedor para los botones de redes sociales */
 .nav__social {
-    display: flex;
-    align-items: center;
-    width: 170px;
-    height: 20px;
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 20px;
 }
 
 a {
@@ -71,6 +71,7 @@ svg {
 @media only screen and (max-width: 1000px) {
   a:hover {
     color: var(--brown);
+    border-bottom: 2px solid var(--wine);
   }
 
   svg {

@@ -72,6 +72,7 @@ export default {
   left: -100%;
   text-align: center;
   transition: all .5s;
+  z-index: 0;
 }
 
 #nav a.router-link-exact-active {

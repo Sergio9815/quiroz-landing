@@ -98,7 +98,7 @@ figure {
 
 .main__image img {
   width: 100%;
-  height: 85vh;
+  height: 84.5vh;
   object-fit: cover;
 }
 
@@ -115,6 +115,7 @@ figure {
   .main {
     margin-top: 100px;
     align-items: flex-start;
+    margin-bottom: -100px;
   }
 
   .main__container {
@@ -143,6 +144,13 @@ figure {
     display: none;
   }
 
+}
+
+/* --- --- -- Responsive design -- --- --- */
+@media only screen and (max-width: 700px) {
+  .main {
+    margin-bottom: -150px;
+  }
 }
 
 </style>

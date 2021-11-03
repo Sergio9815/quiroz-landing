@@ -39,6 +39,7 @@ export default {
 
   methods: {
     toggleMenu() {
+      this.$emit('activateZin', this.showButton);
       this.showButton = !this.showButton;
     },
   },

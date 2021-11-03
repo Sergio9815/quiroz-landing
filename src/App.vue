@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <qg-menu/>
-    <router-view/>
+    <qg-menu v-on:activateZin="toggleZin"/>
+    <router-view :activate="activate"/>
   </div>
 </template>
 
@@ -12,6 +12,16 @@ export default {
   name: 'App',
   components: {
     QgMenu,
+  },
+  data() {
+    return {
+      activate: false,
+    };
+  },
+  methods: {
+    toggleZin(value) {
+      this.activate = value;
+    },
   },
 };
 </script>

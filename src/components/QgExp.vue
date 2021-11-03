@@ -3,7 +3,7 @@
     <h1 class="exp__title"> {{ title }} </h1>
 
     <section class="exp__container">
-      <div class="exp__container-video">
+      <div :class="activate ? 'zindex' : 'zindexOff'" class="exp__container-video">
         <iframe id="intro" width="560" height="315" src="https://www.youtube.com/embed/XKOO0FAkL0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
@@ -20,11 +20,14 @@
 
 <script>
 export default {
-  name: 'QgMain',
+  name: 'QgExp',
   data() {
     return {
       title: 'Experiencia garantizada',
     };
+  },
+  props: {
+    activate: Boolean,
   },
 };
 </script>
@@ -69,7 +72,12 @@ export default {
 }
 
 .btn {
-  padding: 15px 60px;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   background-color: var(--green);
   text-decoration: none;
   border-radius: 50px;
@@ -88,6 +96,14 @@ export default {
   border-radius: 50px;
 }
 
+.zindex {
+  z-index: -2;
+}
+
+.zindexOff {
+  z-index: 0;
+}
+
 /* --- --- -- Responsive design -- --- --- */
 @media only screen and (max-width: 1134px) {
   .exp__content {
@@ -100,6 +116,10 @@ export default {
 @media only screen and (max-width: 1040px) {
   .exp__container {
     flex-direction: column;
+  }
+
+    .btn {
+    width: 100%;
   }
 }
 
@@ -120,13 +140,12 @@ export default {
   }
 
   .exp__content {
-    width: 90%;
+    width: 95%;
     align-items: center;
   }
 
   .btn {
-    padding: 15px 150px;
-    margin-top: 20px;
+    width: 100%;
   }
 
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <qg-main/>
-    <qg-exp/>
+    <qg-exp :activate="activate"/>
   </div>
 </template>
 
@@ -14,6 +14,9 @@ export default {
   components: {
     QgMain,
     QgExp,
+  },
+  props: {
+    activate: Boolean,
   },
 };
 </script>

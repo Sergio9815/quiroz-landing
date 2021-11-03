@@ -1,4 +1,4 @@
-<template>
+<template functional>
     <section class="nav__social">
       <section class="social__btn">
 
@@ -76,6 +76,10 @@ svg {
 
   svg {
   width: 20px;
+  }
+
+  .nav__social {
+    display: none;
   }
 }
 </style>

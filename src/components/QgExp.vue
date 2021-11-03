@@ -2,7 +2,7 @@
   <div class="exp">
     <h1 class="exp__title"> {{ title }} </h1>
 
-    <section class="exp__container">
+    <section class="exp__container" data-aos="zoom-in-left">
       <div :class="activate ? 'zindex' : 'zindexOff'" class="exp__container-video">
         <iframe id="intro" width="560" height="315" src="https://www.youtube.com/embed/XKOO0FAkL0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import AOS from 'aos';
+
 export default {
   name: 'QgExp',
   data() {
@@ -28,6 +30,9 @@ export default {
   },
   props: {
     activate: Boolean,
+  },
+  mounted() {
+    AOS.init();
   },
 };
 </script>
@@ -64,6 +69,8 @@ export default {
   /* background-color: darkorange; */
   text-align: justify;
   line-height: 25px;
+  font-family: lato;
+  letter-spacing: 1.4px;
   padding: 30px;
   display: flex;
   align-content: center;

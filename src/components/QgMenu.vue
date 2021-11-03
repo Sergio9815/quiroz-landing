@@ -60,6 +60,7 @@ export default {
   -webkit-box-shadow: 2px 3px 5px 0px rgba(186,186,186,1);
   -moz-box-shadow: 2px 3px 5px 0px rgba(186,186,186,1);
   box-shadow: 2px 3px 5px 0px rgba(186,186,186,1);
+  z-index: 1;
 }
 
 /* Logo de la empresa */
@@ -95,7 +96,7 @@ export default {
     margin-left: 15px;
   }
 
-  .nav__links, .nav__social {
+  .nav__links {
     display: none;
   }
 

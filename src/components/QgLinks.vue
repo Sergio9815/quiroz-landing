@@ -1,9 +1,15 @@
 <template>
   <section class="nav__links">
 
-        <router-link v-animate-css.hover="'pulse'" to="/">Inicio</router-link>
+        <router-link v-animate-css.hover="'pulse'" to="/"
+          @click.native="scrollToId('goInicio')">
+          Inicio
+        </router-link>
         <router-link
-          v-animate-css.hover="'pulse'" to="/notaria-express">Notaría express</router-link>
+          v-animate-css.hover="'pulse'" to="/notaria-express"
+          @click.native="scrollToId('goNotaria')">
+          Notaría express
+        </router-link>
         <router-link
           v-animate-css.hover="'pulse'" to="/sobre-nosotros">Sobre nosotros</router-link>
         <router-link v-animate-css.hover="'pulse'" to="/testimonios">

@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VAnimateCss from 'v-animate-css';
+import 'aos/dist/aos.css';
 import App from './App.vue';
 import router from './router';
 

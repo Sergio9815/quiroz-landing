@@ -12,9 +12,14 @@ const routes = [
     component: Home,
   },
   {
-    path: '/contactenos',
-    name: 'contactenos',
+    path: '/notaria-express',
+    name: 'notaria-express',
     component: Home,
+  },
+  {
+    path: '/sobre-nosotros',
+    name: 'sobre-nosotros',
+    component: About,
   },
   {
     path: '/testimonios',
@@ -22,9 +27,9 @@ const routes = [
     component: Home,
   },
   {
-    path: '/sobre-nosotros',
-    name: 'About',
-    component: About,
+    path: '/contactenos',
+    name: 'contactenos',
+    component: Home,
   },
 ];
 

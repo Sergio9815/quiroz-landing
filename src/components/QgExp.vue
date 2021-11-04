@@ -67,9 +67,9 @@ export default {
   width: 30%;
   height: 200px;
   /* background-color: darkorange; */
-  text-align: justify;
+  text-align: left;
   line-height: 25px;
-  font-family: lato;
+  font-family: 'Mukta', sans-serif;
   letter-spacing: 1.4px;
   padding: 30px;
   display: flex;

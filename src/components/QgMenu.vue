@@ -5,7 +5,9 @@
         <img class="nav__logo" src="../assets/logos/logo.png" alt="Quiroz-Govea Logo">
       </router-link>
       <qg-links/>
-      <qg-social-btn/>
+      <div class="hide">
+        <qg-social-btn/>
+      </div>
       <div v-show="showButton"
           @click="toggleMenu"
           v-animate-css.click="'rotateIn'" class="nav__menu-responsive">
@@ -96,7 +98,7 @@ export default {
     margin-left: 15px;
   }
 
-  .nav__links {
+  .nav__links, .hide  {
     display: none;
   }
 

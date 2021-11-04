@@ -78,8 +78,5 @@ svg {
   width: 20px;
   }
 
-  .nav__social {
-    display: none;
-  }
 }
 </style>

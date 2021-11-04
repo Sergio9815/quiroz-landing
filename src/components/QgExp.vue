@@ -143,11 +143,11 @@ export default {
   }
 
   .exp__container {
-    width: 90%;
+    width: 100%;
   }
 
   .exp__content {
-    width: 95%;
+    width: 85%;
     align-items: center;
   }
 

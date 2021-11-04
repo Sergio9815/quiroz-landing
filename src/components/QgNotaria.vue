@@ -205,7 +205,7 @@ figure {
 
   .notaria-container-main {
     /* background-color: var(--brown); */
-    width: 90%;
+    width: 100%;
   }
 
   .container-main {
@@ -213,7 +213,7 @@ figure {
   }
 
   .container-main__content {
-    width: 90%;
+    width: 80%;
   }
 
   .notaria-container-img-2 img{

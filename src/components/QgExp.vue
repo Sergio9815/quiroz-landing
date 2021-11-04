@@ -10,7 +10,7 @@
         <div class="exp__content">
             <p>Contamos con más de <b>37 años de experiencia</b>, lo cual nos permite decirle,
               consulte con Quiroz Govea & Asociados.</p>
-            <a v-animate-css.hover="'tada'" class="btn" href="https://github.com/Sergio9815/pokedex-api"
+            <a v-animate-css.hover="'tada'" class="btn" href="https://api.whatsapp.com/send?phone=+507 62764754&text=Hola, Nececito mas informacion!"
             ><i class="fab fa-whatsapp"></i> Escríbanos</a>
         </div>
     </section>

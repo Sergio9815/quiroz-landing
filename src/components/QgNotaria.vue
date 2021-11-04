@@ -132,7 +132,7 @@ export default {
 }
 
 .notaria-container-img {
-  width: 120%;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -149,7 +149,7 @@ figure {
 .notaria-container-img img {
   width: 100%;
   object-fit: cover;
-  height: 80vh;
+  height: 65vh;
   border-radius: 5px;
 }
 

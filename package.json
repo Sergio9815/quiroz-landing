@@ -9,6 +9,7 @@
     "ls": "vue-cli-service lint && vue-cli-service serve"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "aos": "^2.3.4",
     "core-js": "^3.6.5",
     "v-animate-css": "^0.0.5",

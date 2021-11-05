@@ -4,28 +4,33 @@
     <section class="container__form">
       <h1 class="cont__title">Contáctenos</h1>
 
-      <form action="mailto:gsergio1598@gmail.com" method="post">
+      <form ref="form" @submit.prevent="sendEmail">
 
               <div class="form-content">
-                <label for="ct-name"><i class="far fa-user"></i> Nombre completo</label>
+                <label for="name"><i class="far fa-user"></i> Nombre completo</label>
                 <input class="input"
-                  id="ct-name" placeholder="" autocomplete="off">
+                  v-model="name"
+                  name="name"
+                  id="name" placeholder="" autocomplete="off">
               </div>
 
               <div class="form-content">
-                <label for="ct-correo"><i class="far fa-envelope"></i> Correo</label>
+                <label for="email"><i class="far fa-envelope"></i> Correo</label>
                 <input class="input"
-                  id="ct-correo" placeholder="" autocomplete="off">
+                  v-model="email"
+                  name="email"
+                  id="email" placeholder="" autocomplete="off">
               </div>
 
               <div class="form-content">
-                <label for="subject">
+                <label for="message">
                 <i class="far fa-comments"></i> Deja un mensaje (optional)</label>
-                <textarea id="subject" name="subject" placeholder="">
+                <textarea v-model="message" id="message" name="message" placeholder="">
                 </textarea>
               </div>
 
-              <input type="submit" value="Enviar mensaje" v-animate-css.hover="'tada'" class="btn">
+              <input
+              type="submit" value="Enviar mensaje" v-animate-css.hover="'tada'" class="btn">
       </form>
     </section>
 
@@ -38,14 +43,43 @@
 
 <script>
 import AOS from 'aos';
+import emailjs from 'emailjs-com';
 
 export default {
   name: 'Contact',
   props: {
     activate: Boolean,
   },
+  data() {
+    return {
+      name: '',
+      email: '',
+      message: '',
+    };
+  },
   mounted() {
     AOS.init();
+  },
+
+  methods: {
+    sendEmail() {
+      // quirozgovealegal@gmail.com
+      emailjs.sendForm('service_a3vq07x', 'template_csrxm9y', this.$refs.form,
+        'user_PUwl5mPHPMN6zZy9S0e28', {
+          name: this.name,
+          email: this.email,
+          message: this.message,
+        })
+        .then((result) => {
+          console.log('SUCCESS!', result.text);
+        }, (error) => {
+          console.log('FAILED...', error.text);
+        });
+
+      this.name = '';
+      this.email = '';
+      this.message = '';
+    },
   },
 };
 </script>

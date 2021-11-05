@@ -12,6 +12,7 @@
     "@glidejs/glide": "^3.4.1",
     "aos": "^2.3.4",
     "core-js": "^3.6.5",
+    "emailjs-com": "^3.2.0",
     "v-animate-css": "^0.0.5",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0"

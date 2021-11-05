@@ -1,22 +1,25 @@
 <template>
   <div class="home">
-    <qg-main/>
-    <qg-exp :activate="activate"/>
-    <qg-notaria/>
+    <qg-main />
+    <exp :activate="activate"/>
+    <notaria/>
+    <testimonios :activate="activate"/>
   </div>
 </template>
 
 <script>
-import QgMain from '@/components/QgMain.vue';
-import QgExp from '@/components/QgExp.vue';
-import QgNotaria from '@/components/QgNotaria.vue';
+import QgMain from '@/views/Main.vue';
+import Exp from '@/views/Exp.vue';
+import Notaria from '@/views/Notaria.vue';
+import Testimonios from '@/views/Testimonios.vue';
 
 export default {
   name: 'Home',
   components: {
+    Exp,
+    Notaria,
+    Testimonios,
     QgMain,
-    QgExp,
-    QgNotaria,
   },
   props: {
     activate: Boolean,

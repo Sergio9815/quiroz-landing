@@ -31,6 +31,7 @@ export default {
 /* --- --- -- COLORS -- --- --- */
 :root {
   --wine: rgba(41, 1, 17, 90%);
+  --wine2: rgba(41, 1, 17, 0.767);
   --brownLg: #A999A0;
   --brown: #1700106b;
   --brownDg: #170010;
@@ -40,8 +41,10 @@ export default {
   --grayDg: #adadad;
   --whiteLg: #dfdfdf;
   --white: #fff;
+  --whiteTr: rgba(255, 255, 255, 0.651);
   --red: #F56A79;
   --green: #71EFA3;
+  --yellow: #FFD466;
 }
 
 /* --- --- -- MAIN STYLES -- --- --- */

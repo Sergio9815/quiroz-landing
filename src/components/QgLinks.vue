@@ -25,7 +25,7 @@
         <router-link
           v-animate-css.hover="'pulse'"
           to="/contactenos"
-          @click.native="scrollToId('hola')">
+          @click.native="scrollToId('goContact')">
           Contáctenos
         </router-link>
 

@@ -42,35 +42,75 @@
             </li>
 
             <li class="glide__slide">
-              <iframe width="560" height="350" src="https://www.youtube.com/embed/QGjJmIbnrOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="test__video-container">
+                <iframe class="test__video"  width="560" height="350" src="https://www.youtube.com/embed/QGjJmIbnrOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="img-desc">
+                  <i v-for="i in 5" :key="i" class="far fa-star"></i>
+                </div>
+              </div>
             </li>
 
             <li class="glide__slide">
-              <iframe width="560" height="350" src="https://www.youtube.com/embed/U1yCWi9L-ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="test__video-container">
+                <iframe class="test__video"  width="560" height="350" src="https://www.youtube.com/embed/U1yCWi9L-ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="img-desc">
+                  <i v-for="i in 5" :key="i" class="far fa-star"></i>
+                </div>
+              </div>
             </li>
 
             <li class="glide__slide">
-              <iframe width="560" height="350" src="https://www.youtube.com/embed/sjmuOeyZ48U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="test__video-container">
+                <iframe class="test__video"  width="560" height="350" src="https://www.youtube.com/embed/sjmuOeyZ48U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="img-desc">
+                  <i v-for="i in 5" :key="i" class="far fa-star"></i>
+                </div>
+              </div>
             </li>
 
             <li class="glide__slide">
-              <iframe width="560" height="350" src="https://www.youtube.com/embed/_KLr6jtOXAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="test__video-container">
+                <iframe class="test__video"  width="560" height="350" src="https://www.youtube.com/embed/_KLr6jtOXAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="img-desc">
+                  <i v-for="i in 5" :key="i" class="far fa-star"></i>
+                </div>
+              </div>
             </li>
 
             <li class="glide__slide">
-              <iframe width="560" height="350" src="https://www.youtube.com/embed/sdF-OCCVeHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="test__video-container">
+                <iframe class="test__video"  width="560" height="350" src="https://www.youtube.com/embed/sdF-OCCVeHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="img-desc">
+                  <i v-for="i in 5" :key="i" class="far fa-star"></i>
+                </div>
+              </div>
             </li>
 
             <li class="glide__slide">
-              <iframe width="560" height="350" src="https://www.youtube.com/embed/dR8ok3BPIY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="test__video-container">
+                <iframe class="test__video"  width="560" height="350" src="https://www.youtube.com/embed/dR8ok3BPIY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="img-desc">
+                  <i v-for="i in 5" :key="i" class="far fa-star"></i>
+                </div>
+              </div>
             </li>
 
             <li class="glide__slide">
-              <iframe width="560" height="350" src="https://www.youtube.com/embed/QLDtsTnEdGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="test__video-container">
+                  <iframe class="test__video"  width="560" height="350" src="https://www.youtube.com/embed/QLDtsTnEdGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="img-desc">
+                    <i v-for="i in 5" :key="i" class="far fa-star"></i>
+                  </div>
+              </div>
             </li>
 
             <li class="glide__slide">
-              <iframe width="560" height="350" src="https://www.youtube.com/embed/qRr7jYyehq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="test__video-container">
+                  <iframe class="test__video"  width="560" height="350" src="https://www.youtube.com/embed/qRr7jYyehq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="img-desc">
+                    <i v-for="i in 5" :key="i" class="far fa-star"></i>
+                  </div>
+              </div>
             </li>
 
           </ul>
@@ -189,8 +229,21 @@ export default {
   }
 
   /* --- --- -- Video design -- --- --- */
-  .test-video {
-    height: 350px;
+  .test__video-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .test__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 408px;
+    height: 300px;
   }
 
 /* --- --- -- Responsive design -- --- --- */
@@ -200,4 +253,9 @@ export default {
   }
 }
 
+@media only screen and (max-width: 523px) {
+  .glide__container {
+    height: 60vh;
+  }
+}
 </style>

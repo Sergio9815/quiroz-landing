@@ -1,21 +1,29 @@
 <template>
     <section
           @click="toggleLinks" class="nav__links2 animate__animated animate__fadeInLeft">
+
         <router-link v-animate-css.hover="'pulse'" to="/"
           @click.native="scrollToId('goInicio')">
           Inicio
         </router-link>
+
         <router-link
           v-animate-css.hover="'pulse'" to="/notaria-express"
           @click.native="scrollToId('goNotaria')">
           Notaría express
         </router-link>
+
         <router-link
-          v-animate-css.hover="'pulse'" to="/sobre-nosotros">Sobre nosotros
+          v-animate-css.hover="'pulse'" to="/sobre-nosotros">
+          Sobre nosotros
         </router-link>
+
         <router-link
-          v-animate-css.hover="'pulse'" to="/testimonios">Testimonios
+          v-animate-css.hover="'pulse'" to="/testimonios"
+          @click.native="scrollToId('goTestimonios')">
+          Testimonios
         </router-link>
+
         <!-- <router-link v-animate-css.hover="'pulse'" to="/ubicacion">Sucursales</router-link> -->
         <router-link
           v-animate-css.hover="'pulse'"

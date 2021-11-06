@@ -172,6 +172,7 @@ export default {
         },
         926: {
           perView: 1,
+          gap: 50,
         },
       },
     });
@@ -214,7 +215,7 @@ export default {
 
   .img-ab {
     width: 400px;
-    height: 300px;
+    height: 320px;
   }
 
   .img-desc {
@@ -243,19 +244,15 @@ export default {
     align-items: center;
     justify-content: center;
     width: 408px;
-    height: 300px;
+    height: 320px;
   }
 
 /* --- --- -- Responsive design -- --- --- */
 @media only screen and (max-width: 523px) {
   .glide__container {
     height: 60vh;
+    width: 95%;
   }
 }
 
-@media only screen and (max-width: 523px) {
-  .glide__container {
-    height: 60vh;
-  }
-}
 </style>

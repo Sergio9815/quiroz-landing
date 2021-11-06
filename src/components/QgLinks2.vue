@@ -79,7 +79,7 @@ export default {
   width: 100%;
   height: 100vh;
   background-color: var(--white);
-  top: 80px;
+  top: 68px;
   left: -100%;
   text-align: center;
   transition: all .5s;

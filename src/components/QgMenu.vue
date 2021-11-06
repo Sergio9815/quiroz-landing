@@ -53,22 +53,25 @@ export default {
 /* --- --- -- Menu BAR -- --- --- */
 #nav {
   width: 100%;
-  height: 100px;
+  height: 70px;
   background-color: var(--wine);
   font-family: Lato;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  -webkit-box-shadow: 2px 3px 5px 0px rgba(186,186,186,1);
-  -moz-box-shadow: 2px 3px 5px 0px rgba(186,186,186,1);
-  box-shadow: 2px 3px 5px 0px rgba(186,186,186,1);
+  position: fixed;
+  top: 0;
+  background: rgba(61, 26, 39, 0.986);
+  box-shadow: 0 8px 32px 0 rgba(24, 24, 24, 0.37);
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
   z-index: 1;
 }
 
 /* Logo de la empresa */
 .nav__logo {
-  width: 170px;
-  height: 110px;
+  width: 140px;
+  height: 80px;
 }
 
 .nav__menu-responsive {
@@ -82,14 +85,7 @@ export default {
 /* --- --- -- Responsive design -- --- --- */
 @media only screen and (max-width: 1000px) {
   #nav {
-    height: 80px;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    background: rgba(41, 1, 17, 0.904);
-    box-shadow: 0 8px 32px 0 rgba(121, 121, 121, 0.37);
-    backdrop-filter: blur( 2.5px );
-    -webkit-backdrop-filter: blur( 2.5px );
   }
 
   .nav__logo {

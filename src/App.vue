@@ -52,6 +52,7 @@ export default {
   --white: #fff;
   --whiteTr: rgba(255, 255, 255, 0.651);
   --red: #F56A79;
+  --redLg: #f56a78c5;
   --green: #71EFA3;
   --greenLg: #71efa3c0;
   --yellow: #FFD466;

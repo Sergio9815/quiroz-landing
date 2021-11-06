@@ -10,7 +10,7 @@
         <div class="exp__content">
             <p>Contamos con más de <b>37 años de experiencia</b>, lo cual nos permite decirle,
               consulte con Quiroz Govea & Asociados.</p>
-            <a v-animate-css.hover="'tada'" class="btn" href="https://api.whatsapp.com/send?phone=+507 62764754&text=Saludos, busco información sobre su servicio legal!"
+            <a v-animate-css.hover="'pulse'" class="btn" href="https://api.whatsapp.com/send?phone=+507 62764754&text=Saludos, busco información sobre su servicio legal!"
             ><i class="fab fa-whatsapp"></i> Escríbanos</a>
         </div>
     </section>
@@ -85,11 +85,13 @@ export default {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: var(--green);
+  background-color: var(--greenLg);
   text-decoration: none;
   border-radius: 50px;
-  color: var(--wine);
+  color: var(--brownDg);
 }
+
+.btn:hover { background-color: var(--green); }
 
 .exp__container-video {
   background-color: var(--brown);
@@ -143,7 +145,7 @@ export default {
   }
 
   .exp__container {
-    width: 90%;
+    width: 95%;
   }
 
   .exp__content {

@@ -23,18 +23,18 @@ export default {
 
 <style scoped>
 
-.test-container {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../assets/images/img-8.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+  .test-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/img-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   .bg-container {
     width: 100%;
@@ -46,6 +46,10 @@ export default {
     justify-content: center;
     flex-direction: column;
     color: var(--white);
+  }
+
+  .test__title {
+    margin-top: 75px;
   }
 
   .bg-container p{

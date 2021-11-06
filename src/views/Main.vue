@@ -35,6 +35,8 @@ export default {
   align-items: flex-start;
   justify-content: center;
   background-color: var(--white);
+  scroll-behavior: smooth;
+  margin-top: 65px;
 }
 
 .main__container {
@@ -42,7 +44,7 @@ export default {
   align-items: center;
   justify-content: center;
   width: 50%;
-  height: 85vh;
+  height: 90vh;
 }
 
 .main__container-text {
@@ -62,12 +64,12 @@ export default {
 .container__title {
   align-self: flex-start;
   margin-bottom: -5px;
-  margin-top: 150px;
+  margin-top: 118px;
   margin-left: 50px;
   font-size: 30px;
   color: var(--brownDg-2);
   text-align: center;
-  text-shadow: 1px 2px var(--gray);
+  text-shadow: 3px 3px 2px var(--gray);
 }
 
 .container__paragraph {
@@ -82,7 +84,7 @@ export default {
   align-items: center;
   justify-content: space-around;
   width: 50%;
-  height: 85vh;
+  height: 97vh;
 }
 
 figure {
@@ -92,7 +94,7 @@ figure {
 
 .main__image img {
   width: 100%;
-  height: 84.5vh;
+  height: 95.5vh;
   object-fit: cover;
 }
 

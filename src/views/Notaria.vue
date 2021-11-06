@@ -3,7 +3,7 @@
 
     <section class="notaria-container-main">
       <div  class="container-main">
-          <h1 class="container-main__title"> ¿Qué es Notaría Express? </h1>
+          <h1 id="goNotaria" class="container-main__title"> ¿Qué es Notaría Express? </h1>
           <section class="notaria-container-img-2"
           data-aos="fade-right" data-aos-duration="2000">
             <figure>
@@ -123,7 +123,14 @@ export default {
   text-decoration: none;
   border-radius: 50px;
   gap: 10px;
-  background-color: #BC8487;
+  background-color: var(--chocolateLg);
+  color: var(--white);
+  letter-spacing: 2px;
+  font-family: 'Mukta';
+}
+
+.btn-not:hover {
+  background-color: var(--chocolate);
   color: var(--white);
 }
 
@@ -138,6 +145,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 62px;
   /* background-color: #BC8487; */
 }
 
@@ -204,7 +212,7 @@ figure {
 
   .notaria-container-main {
     /* background-color: var(--brown); */
-    width: 90%;
+    width: 95%;
   }
 
   .container-main {

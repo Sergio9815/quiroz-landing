@@ -19,18 +19,24 @@
                 <input class="input"
                   v-model="email"
                   name="email"
+                  @click="checkEmail"
                   id="email" placeholder="" autocomplete="off">
+                  <p
+                    class="check-email animate__animated animate__fadeIn"
+                    :class="validate ? 'hide-text-email' : ''"
+                  >Por favor ingrese una dirección de correo válida.</p>
               </div>
 
               <div class="form-content">
                 <label for="message">
-                <i class="far fa-comments"></i> Deja un mensaje (optional)</label>
+                <i class="far fa-comments"></i> Deja un mensaje (opcional)</label>
                 <textarea v-model="message" id="message" name="message" placeholder="">
                 </textarea>
               </div>
 
-              <input
-              type="submit" value="Enviar mensaje" v-animate-css.hover="'tada'" class="btn">
+              <button type="submit" v-animate-css.hover="'pulse'" class="btn">
+                <i class="far fa-paper-plane"></i>Enviar mensaje
+              </button>
       </form>
     </section>
 
@@ -44,6 +50,7 @@
 <script>
 import AOS from 'aos';
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 export default {
   name: 'Contact',
@@ -52,9 +59,10 @@ export default {
   },
   data() {
     return {
-      name: '',
-      email: '',
-      message: '',
+      name: ' ',
+      email: ' ',
+      message: ' ',
+      validate: false,
     };
   },
   mounted() {
@@ -62,23 +70,57 @@ export default {
   },
 
   methods: {
+    checkEmail() {
+      if (this.email.indexOf('@') > -1) {
+        this.validate = true;
+      } else {
+        this.validate = false;
+      }
+    },
+
     sendEmail() {
       // quirozgovealegal@gmail.com
-      emailjs.sendForm('service_a3vq07x', 'template_csrxm9y', this.$refs.form,
-        'user_PUwl5mPHPMN6zZy9S0e28', {
-          name: this.name,
-          email: this.email,
-          message: this.message,
-        })
-        .then((result) => {
-          console.log('SUCCESS!', result.text);
-        }, (error) => {
-          console.log('FAILED...', error.text);
+      if (this.email !== ' ' && this.name !== ' ') {
+        emailjs.sendForm('service_a3vq07x', 'template_csrxm9y', this.$refs.form,
+          'user_PUwl5mPHPMN6zZy9S0e28', {
+            name: this.name,
+            email: this.email,
+            message: this.message,
+          })
+          .then((result) => {
+            console.log('SUCCESS!', result.text);
+          }, (error) => {
+            console.log('FAILED...', error.text);
+          });
+
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer);
+            toast.addEventListener('mouseleave', Swal.resumeTimer);
+          },
         });
 
-      this.name = '';
-      this.email = '';
-      this.message = '';
+        Toast.fire({
+          icon: 'success',
+          title: 'Mensaje enviado con exito!',
+        });
+
+        this.name = ' ';
+        this.email = ' ';
+        this.message = ' ';
+      } else {
+        Swal.fire({
+          title: 'Oops!',
+          text: 'Por favor indique su nombre y correo!',
+          icon: 'info',
+          confirmButtonText: 'Ok',
+        });
+      }
     },
   },
 };
@@ -95,12 +137,13 @@ export default {
 
   .container__form {
     width: 50%;
-    height: 90vh;
+    height: 100vh;
     /* background-color: var(--brown); */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-bottom: 35px;
   }
 
   .cont__title {
@@ -114,9 +157,10 @@ export default {
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: column;
-    width: 400px;
-    height: 80vh;
+    width: 370px;
+    height: 70vh;
     color: var(--brownDg);
+    font-family: 'Mukta';
     /* background-color: aquamarine; */
   }
 
@@ -136,6 +180,7 @@ export default {
     font-size: 16px;
     color: var(--brownDg-2);
     border-radius: 5px;
+    font-family: 'Lato';
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.938);
     border-bottom: 4px solid var(--brown);
@@ -158,11 +203,14 @@ export default {
 
   textarea {
     width: 100%;
-    height: 170px;
+    height: 120px;
     border: none;
     border-radius: 5px;
     transition: 0.15s;
     display: flex;
+    color: var(--brownDg-2);
+    font-family: 'Lato';
+    font-size: 16px;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.938);
     border-bottom: 4px solid var(--brown);
@@ -184,30 +232,46 @@ export default {
   }
 
   .btn {
-    width: 250px;
-    height: 50px;
+    width: 100%;
+    height: 45px;
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: center;
     justify-self: flex-start;
-    background-color: var(--blue);
+    background-color: var(--blueLg);
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 20px;
     border: none;
     color: var(--wine);
     cursor: pointer;
     outline: none;
+    letter-spacing: 2px;
+    font-family: Helvetica, sans-serif;
   }
+
+  .btn:hover { background-color: var(--blue);  }
 
   .container__svg {
     width: 50%;
     height: 80vh;
     /* background-color: lightcoral; */
     margin-right: 100px;
+    margin-top: 35px;
   }
 
   .container__svg svg{
     width: 100%;
+  }
+
+  .check-email {
+    color: var(--red);
+    font-size: 14px;
+    display: flex;
+  }
+
+  .hide-text-email {
+    display: none;
   }
 
 /* --- --- -- Responsive design -- --- --- */
@@ -223,7 +287,8 @@ export default {
   }
 
   form {
-    width: 90%;
+    width: 80%;
+    height: 70vh;
   }
 
   .btn {

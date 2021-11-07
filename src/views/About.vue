@@ -25,7 +25,7 @@
             </a>
         </article>
 
-        <section id="main-figure" class="about__main-desc" data-aos="fade-left">
+        <section id="main-figure" class="about__main-desc">
           <figure>
             <img src="../assets/images/img-1.webp" alt="Abogados">
           </figure>

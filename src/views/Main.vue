@@ -13,7 +13,7 @@
 
     <section class="main__image">
       <figure>
-        <img src="../assets/images/img-7.webp" alt="">
+        <img src="../assets/images/img-7.webp" alt="Fundadores Quiroz Govea">
         <figcaption></figcaption>
       </figure>
     </section>

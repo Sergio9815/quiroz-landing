@@ -14,8 +14,8 @@
         </router-link>
 
         <router-link
-          v-animate-css.hover="'pulse'" to="/sobre-nosotros">
-          Sobre nosotros
+          v-animate-css.hover="'pulse'" to="/sobre-nosotros"
+          @click.native="scrollToId('goAbout')">Sobre nosotros
         </router-link>
 
         <router-link

@@ -19,7 +19,6 @@
                 <input class="input"
                   v-model="email"
                   name="email"
-                  @click="checkEmail"
                   id="email" placeholder="" autocomplete="off">
                   <p
                     class="check-email animate__animated animate__fadeIn"
@@ -48,7 +47,6 @@
 </template>
 
 <script>
-import AOS from 'aos';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 
@@ -62,11 +60,14 @@ export default {
       name: ' ',
       email: ' ',
       message: ' ',
-      validate: false,
+      validate: true,
     };
   },
-  mounted() {
-    AOS.init();
+  watch: {
+    // cada vez que la pregunta cambie, esta función será ejecutada
+    email() {
+      this.checkEmail();
+    },
   },
 
   methods: {

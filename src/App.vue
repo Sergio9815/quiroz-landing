@@ -44,6 +44,7 @@ export default {
   --brownDg-3: #241a21;
   --chocolate: #BC8487;
   --chocolateLg: #bc8487b2;
+  --chocolateLg-3: #bc848731;
   --blue: #7FD4FF;
   --blueLg: #7fd4ffc5;
   --gray: #c7c7c7;

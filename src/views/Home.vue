@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <qg-main />
-    <exp :activate="activate"/>
+    <exp/>
     <notaria/>
     <testimonios :activate="activate"/>
     <contact/>

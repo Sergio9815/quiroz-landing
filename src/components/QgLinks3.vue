@@ -22,7 +22,6 @@
           Testimonios
         </router-link>
 
-        <!-- <router-link v-animate-css.hover="'pulse'" to="/ubicacion">Sucursales</router-link> -->
         <router-link
           v-animate-css.hover="'pulse'"
           to="/contactenos"
@@ -71,7 +70,6 @@ export default {
   flex-direction: column;
   gap: 30px;
   width: 80%;
-  /* background-color: aquamarine; */
 }
 
 </style>

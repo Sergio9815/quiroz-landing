@@ -9,7 +9,10 @@
     "ls": "vue-cli-service lint && vue-cli-service serve"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@glidejs/glide": "^3.4.1",
+    "@miyaoka/vue-youtube-embed-lite": "^1.1.0",
+    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "core-js": "^3.6.5",
     "emailjs-com": "^3.2.0",

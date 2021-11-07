@@ -13,7 +13,7 @@
 
     <section class="main__image">
       <figure>
-        <img src="../assets/images/img-7.jpg" alt="">
+        <img src="../assets/images/img-7.webp" alt="">
         <figcaption></figcaption>
       </figure>
     </section>
@@ -106,7 +106,6 @@ figure {
   }
 }
 
-/* --- --- -- Responsive design -- --- --- */
 @media only screen and (max-width: 1000px) {
   .main {
     margin-top: 100px;
@@ -142,7 +141,6 @@ figure {
 
 }
 
-/* --- --- -- Responsive design -- --- --- */
 @media only screen and (max-width: 700px) {
   .main {
     margin-bottom: -150px;

@@ -2,7 +2,7 @@
   <div>
     <div id="nav">
       <router-link to="/">
-        <img class="nav__logo" src="../assets/logos/logo.png" alt="Quiroz-Govea Logo">
+        <img class="nav__logo" src="../assets/logos/logo.webp" alt="Quiroz-Govea Logo">
       </router-link>
       <qg-links/>
       <div class="hide">

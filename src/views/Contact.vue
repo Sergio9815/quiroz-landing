@@ -7,7 +7,9 @@
       <form ref="form" @submit.prevent="sendEmail">
 
               <div class="form-content">
-                <label for="name"><i class="far fa-user"></i> Nombre completo</label>
+                <label for="name">
+                  <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"></path></svg>
+                Nombre completo</label>
                 <input class="input"
                   v-model="name"
                   name="name"
@@ -15,7 +17,8 @@
               </div>
 
               <div class="form-content">
-                <label for="email"><i class="far fa-envelope"></i> Correo</label>
+                <label for="email"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>
+                  Correo</label>
                 <input class="input"
                   v-model="email"
                   name="email"
@@ -28,13 +31,15 @@
 
               <div class="form-content">
                 <label for="message">
-                <i class="far fa-comments"></i> Deja un mensaje (opcional)</label>
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="comments" class="svg-inline--fa fa-comments fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z"></path></svg>
+                Deja un mensaje (opcional)</label>
                 <textarea v-model="message" id="message" name="message" placeholder="">
                 </textarea>
               </div>
 
               <button type="submit" v-animate-css.hover="'pulse'" class="btn">
-                <i class="far fa-paper-plane"></i>Enviar mensaje
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="paper-plane" class="svg-inline--fa fa-paper-plane fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"></path></svg>
+                Enviar mensaje
               </button>
       </form>
     </section>
@@ -64,7 +69,6 @@ export default {
     };
   },
   watch: {
-    // cada vez que la pregunta cambie, esta función será ejecutada
     email() {
       this.checkEmail();
     },
@@ -139,7 +143,6 @@ export default {
   .container__form {
     width: 50%;
     height: 100vh;
-    /* background-color: var(--brown); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +165,6 @@ export default {
     height: 70vh;
     color: var(--brownDg);
     font-family: 'Mukta';
-    /* background-color: aquamarine; */
   }
 
   .form-content {
@@ -230,6 +232,13 @@ export default {
     font-size: 18px;
     margin-bottom: 5px;
     color: var(--brown);
+    display: flex;
+    gap: 5px;
+  }
+
+  svg {
+    width: 15.5px;
+    margin-bottom: 2px;
   }
 
   .btn {
@@ -256,7 +265,6 @@ export default {
   .container__svg {
     width: 50%;
     height: 80vh;
-    /* background-color: lightcoral; */
     margin-right: 100px;
     margin-top: 35px;
   }

@@ -26,7 +26,7 @@ export default {
   .test-container {
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/images/img-8.jpg);
+    background-image: url(../assets/images/img-8.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

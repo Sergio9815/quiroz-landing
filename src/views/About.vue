@@ -6,7 +6,7 @@
         <article class="about__main-desc">
             <h3>Sobre nosotros</h3>
             <figure id="main-hide-figure">
-              <img src="../assets/images/img-1.jpg" alt="Abogados">
+              <img src="../assets/images/img-1.webp" alt="Abogados">
             </figure>
 
             <p>Quiroz Govea & Asociados, es la visión de unos de su miembros fundador:
@@ -20,13 +20,14 @@
 
             <a v-animate-css.hover="'pulse'" class="btn"
               href="https://www.youtube.com/channel/UCqXWsJziEdCpwUz1yWBZhKQ">
-              <i class="fab fa-youtube"></i> YouTube
+              <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+              YouTube
             </a>
         </article>
 
         <section id="main-figure" class="about__main-desc" data-aos="fade-left">
           <figure>
-            <img src="../assets/images/img-1.jpg" alt="Abogados">
+            <img src="../assets/images/img-1.webp" alt="Abogados">
           </figure>
         </section>
 
@@ -36,10 +37,10 @@
             <div class="map__one-data">
                   <h3 class="map__one-data--title">Visita nuestras sucursales</h3>
                   <figure id="map--img">
-                    <img src="../assets/images/img-3.jpg" alt="">
+                    <img src="../assets/images/img-3.webp" alt="">
                   </figure>
                   <div class="map--text">
-                      <h5><i class="fas fa-map-marker-alt"></i>
+                      <h5><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
                       Bethania</h5>
                       <p>Ciudad de Panamá, Bethania, # 44, Calle Nombre de Dios,
                       50 mts del Cuartel de Bomberos del Ingenio.</p>
@@ -52,9 +53,14 @@
 
       <div id="sucursal-2" class="about__map-one">
             <div id="suc-2" class="map__one-data">
-                  <iframe id="map--img" width="560" height="315" src="https://www.youtube.com/embed/TggqBIpW6Ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <YoutubeEmbedLite
+                          vid="TggqBIpW6Ik"
+                          thumb-quality="hq"
+                          :params="{start: 0}"
+                          class="vid"
+                        />
                   <div class="map--text">
-                      <h5><i class="fas fa-map-marker-alt"></i>
+                      <h5><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
                       San Carlos</h5>
                       <p>Visítanos en Panamá Oeste, San José,
                         Distrito de San Carlos, Camino a la Playa,
@@ -71,9 +77,11 @@
 
 <script>
 import AOS from 'aos';
+import YoutubeEmbedLite from '@miyaoka/vue-youtube-embed-lite';
 
 export default {
   name: 'About',
+  components: { YoutubeEmbedLite },
   mounted() {
     AOS.init();
   },
@@ -95,7 +103,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: lightgreen; */
   margin-top: 50px;
 }
 
@@ -107,8 +114,6 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: lightpink; */
-  /* border: 2px solid black; */
   text-align: justify;
 }
 
@@ -124,6 +129,10 @@ h3 {
     letter-spacing: 1.4px;
     font-family: 'Mukta', sans-serif;
 }
+
+  svg {
+    width: 16px;
+  }
 
 .btn {
   width: 250px;
@@ -177,7 +186,6 @@ figure {
 .map__one-data, .map__one-embed {
   width: 50%;
   height: 100vh;
-  /* background-color: lightcoral; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -206,6 +214,9 @@ figure {
 .map--text h5 {
   font-size: 23px;
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 #sucursal-2 {
@@ -219,6 +230,10 @@ figure {
   justify-content: center;
 }
 
+  .vid {
+    width: 80%;
+  }
+
 @media only screen and (max-width: 1250px) {
   #one-map {
     width: 100%;
@@ -229,10 +244,6 @@ figure {
 
   .map__one-embed iframe {
     width: 100%;
-  }
-
-  #suc-2 iframe {
-    width: 80%;
   }
 }
 
@@ -264,7 +275,7 @@ figure {
     flex-direction: column;
   }
 
-  #map--img {
+  #map--img, .vid  {
     display: none;
   }
 
@@ -310,7 +321,7 @@ figure {
 
 @media only screen and (max-width: 500px) {
   .about_main  {
-    height: 125vh;
+    height: 115vh;
   }
 }
 

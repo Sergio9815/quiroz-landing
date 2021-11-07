@@ -67,10 +67,6 @@ body {
   color: var(--white);
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -82,5 +78,22 @@ body {
 #footer-svg {
   margin-top: -20px;
   margin-bottom: -70px;
+}
+
+/* --- --- -- LOCAL FONTS -- --- --- */
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'),
+    url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mukta';
+  src: local('Mukta'),
+    url('./assets/fonts/Mukta-Light.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
 }
 </style>

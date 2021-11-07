@@ -295,7 +295,7 @@ figure {
 @media only screen and (max-width: 700px) {
   .about__main-desc {
     align-items: center;
-    width: 100%;
+    width: 90%;
     gap: 20px;
   }
 
@@ -307,7 +307,7 @@ figure {
   .btn { align-self: center; width: 100%; }
 
   .map__one-data {
-    width: 95%;
+    width: 90%;
   }
 
   .map__one-embed {
@@ -319,15 +319,15 @@ figure {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 680px) {
   .about_main  {
-    height: 115vh;
+    height: 118vh;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .about_main  {
-    height: 130vh;
+    height: 115vh;
   }
 
   .about__main-desc {

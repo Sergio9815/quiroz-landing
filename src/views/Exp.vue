@@ -125,7 +125,6 @@ thumb {
 /* --- --- -- Responsive design -- --- --- */
 @media only screen and (max-width: 1134px) {
   .exp__content {
-    width: 70%;
     padding: 0;
   }
 }
@@ -133,8 +132,12 @@ thumb {
 @media only screen and (max-width: 1040px) {
   .exp__container {
     flex-direction: column;
+    width: 100%;
   }
 
+.exp__content {
+  width: 60%;
+}
     .btn {
     width: 100%;
   }
@@ -164,5 +167,50 @@ thumb {
     width: 100%;
   }
 
+  .exp {
+    margin-bottom: -75px;
+  }
+}
+
+@media only screen and (max-width: 611px) {
+.exp__content {
+  margin-top: -20px;
+}
+}
+
+@media only screen and (max-width: 548px) {
+  .exp__content {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .exp__content {
+    margin-top: -70px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .exp__content {
+    margin-top: -100px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .exp__content {
+    margin-top: -120px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .exp__content {
+    margin-top: -140px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .exp__content {
+    margin-top: -190px;
+  }
 }
 </style>

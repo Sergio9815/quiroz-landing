@@ -240,6 +240,7 @@ figure {
 #sucursal-2 {
   flex-direction: row-reverse;
   background-color: var(--white);
+  margin-bottom: -200px;
 }
 
 #suc-2 {
@@ -334,6 +335,7 @@ figure {
     flex-direction: column;
     height: 80vh;
     margin-top: 80px;
+    margin-bottom: 0px;
   }
 
   .about_team {

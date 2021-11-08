@@ -84,10 +84,9 @@ export default {
     },
 
     sendEmail() {
-      // quirozgovealegal@gmail.com
       if (this.email !== ' ' && this.name !== ' ') {
-        emailjs.sendForm('service_a3vq07x', 'template_csrxm9y', this.$refs.form,
-          'user_PUwl5mPHPMN6zZy9S0e28', {
+        emailjs.sendForm('service_41zmzkt', 'template_oe6qwuf', this.$refs.form,
+          'user_JANudvB7qEC6K9NO8MfDm', {
             name: this.name,
             email: this.email,
             message: this.message,

@@ -43,7 +43,7 @@
               class="team-vid"
             />
             <YoutubeEmbedLite
-              vid="TggqBIpW6Ik"
+              vid="vhSRV9KvihI"
               thumb-quality="sd"
               :params="{start: 0}"
               class="team-vid"

@@ -33,6 +33,24 @@
 
       </section>
 
+      <section class="about_team">
+          <h3>Nuestro Equipo</h3>
+        <article class="about__team-videos">
+            <YoutubeEmbedLite
+              vid="AZJCH84P9A0"
+              thumb-quality="sd"
+              :params="{start: 0}"
+              class="team-vid"
+            />
+            <YoutubeEmbedLite
+              vid="TggqBIpW6Ik"
+              thumb-quality="sd"
+              :params="{start: 0}"
+              class="team-vid"
+            />
+        </article>
+      </section>
+
       <div class="about__map-one">
             <div class="map__one-data">
                   <h3 class="map__one-data--title">Visita nuestras sucursales</h3>
@@ -234,6 +252,33 @@ figure {
     width: 80%;
   }
 
+.about_team {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.about_team h3 {
+  align-self: center;
+}
+
+.about__team-videos {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  z-index: 0;
+}
+
+.team-vid {
+  width: 500px;
+}
+
 @media only screen and (max-width: 1250px) {
   #one-map {
     width: 100%;
@@ -290,6 +335,10 @@ figure {
     height: 80vh;
     margin-top: 80px;
   }
+
+  .about_team {
+    margin-top: -60px;
+}
 }
 
 @media only screen and (max-width: 700px) {

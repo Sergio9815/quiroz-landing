@@ -31,6 +31,11 @@ const routes = [
     name: 'contactenos',
     component: Home,
   },
+  {
+    path: '*',
+    name: 'error',
+    component: Home,
+  },
 ];
 
 const router = new VueRouter({

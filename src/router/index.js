@@ -32,9 +32,8 @@ const routes = [
     component: Home,
   },
   {
-    path: '*',
-    name: 'error',
-    component: Home,
+    path: '/404',
+    redirect: '/',
   },
 ];
 

@@ -31,10 +31,6 @@ const routes = [
     name: 'contactenos',
     component: Home,
   },
-  {
-    path: '*',
-    redirect: '/',
-  },
 ];
 
 const router = new VueRouter({

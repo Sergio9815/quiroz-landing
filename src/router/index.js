@@ -32,7 +32,7 @@ const routes = [
     component: Home,
   },
   {
-    path: '/404',
+    path: '*',
     redirect: '/',
   },
 ];

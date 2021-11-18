@@ -40,7 +40,7 @@
 .glide__arrow:hover {
   border-color: var(--white);
   color: var(--white);
-  opacity: 100%;
+  /* opacity: 100%; */
 }
 
 /* --- --- -- SOLO FLECHAS -- --- --- */

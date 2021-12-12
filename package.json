@@ -19,7 +19,8 @@
     "sweetalert2": "^11.1.9",
     "v-animate-css": "^0.0.5",
     "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
+    "vue-router": "^3.2.0",
+    "vue-router-sitemap": "^0.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

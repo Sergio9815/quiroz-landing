@@ -13,7 +13,7 @@
             <li class="glide__slide">
               <div class="test__video-container">
                 <YoutubeEmbedLite
-                  vid="rl6numqqxSY" <!-- LLSKFFDS -->
+                  vid="rl6numqqxSY"
                   thumb-quality="hq"
                   :params="{start: 0}"
                   class="test__video"
